@@ -38,4 +38,4 @@ than fixing the "aftermath".</br>
 5. When running a query against your database, the escape characters will *not* show in</br>
       the query's column headers;  \`Date` will be shown only as "Date" (the double</br>
       quotes are meant to emphasize the word, they are not shown literally).</br>
-6. Do not attempt to MS Access as a database - the SQL scripts used here will not work.</br>
+6. Do not attempt to use MS Access as a database - the SQL scripts used here will not work.</br>
