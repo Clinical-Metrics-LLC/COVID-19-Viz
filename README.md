@@ -8,7 +8,7 @@ Contains:
 2. MySQL Extraction, Transformation, and Loading (ETL) scripts for the New York Times data and Census Bureau)</br>
        data as of 2019 (the scripts are in both Verbose (heavily commented) and Runtime versions)) {in SQL_Scripts for MySQL}</br>
 3. Tableau Visualization files in .twbx and .twb versions for a MySQL ODBC connection and a .twbx file)</br>
-       downloaded from Tableau Public (they are identical in "content")</br>
+       downloaded from Tableau Public (they are identical in "content") {Tableau_Viz_Files}</br>
    a. 'COVID-19 - Cases & Deaths (US)' requires no Census file (US population is fixed))</br>
    b. 'COVID-19 - Cases & Deaths (State)' requires 'US States' Census file)</br>
    c. 'COVID-19 - Cases & Deaths (County)' requires 'US Counties' Census file)</br>
