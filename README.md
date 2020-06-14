@@ -1,4 +1,5 @@
-COVID-19-Viz# COVID-19-Viz</br>
+COVID-19-Viz</br>
+
 COVID-19 Visualizations from NY Times COVID-19 Data Repository at https://github.com/nytimes/covid-19-data/</br>
 Live version at https://public.tableau.com/profile/clinical.metrics.llc#!/ updated daily between 11:00-11:30 EDT</br>
 
