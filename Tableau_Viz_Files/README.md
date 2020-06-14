@@ -19,9 +19,9 @@ Adapting these files for your own use against your own database or CSV Files...<
 
 (Note: This material was created for COVID-19 data, but could be used for any similar</br>
 Epidemiological data with changes in the header text. It was created as "generically"</br>
-as possbile to allow for easy reuse for another epidemic.  With ZIP-code level data, and</br>
-a US Census ZCTA population file and "shapefile", a new graphed Workbook and Map</br>
-Workbook could be created in an hour or two.)</br>
+as possbile to allow for easy reuse in another epidemic.  With ZIP-code-level data, and</br>
+a US Census ZCTA (ZIP Code Tabulation Area) population file and "shapefile", a new graphed</br>
+Workbook and Map Workbook could be created in an hour or two from the existing material.)</br>
 
 Tableau is most "unforgiving" about creating new Data Sources and replacing exising ones.</br>
 Failing to do the following precisely will end up with corrupted formulas that you will need</br>
