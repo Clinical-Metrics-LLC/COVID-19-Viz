@@ -18,5 +18,5 @@ Contains:
    a. FIPS added for "New York City, NY" ((3651000) and "Kansas City, MO" (2938000))</br>
    b. "Synthetic" FIPS added for "Unknown" Counties (1-2 digit State FIPS + "999" (e.g. "Unknown, NY" is 36999))</br>
 
-Daily Cases/Deaths have been extracted from the Cummulative Cases/Deaths. In some cases there are negative Daily Counts</br>
-    where errors) have been subtracted from the Cumulative Counts
+Daily Cases/Deaths have been extracted from the Cumulative Cases/Deaths. In some cases there are negative Daily Counts</br>
+    where errors have been subtracted from the Cumulative Counts
