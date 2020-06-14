@@ -23,7 +23,7 @@ as possbile to allow for easy reuse in another epidemic.  With ZIP-code-level da
 a US Census ZCTA (ZIP Code Tabulation Area) population file and "shapefile", a new graphed</br>
 Workbook and Map Workbook could be created in an hour or two from the existing material.)</br>
 
-Tableau is most "unforgiving" about creating new Data Sources when replacing exising ones.</br>
+Tableau is most "unforgiving" about creating new Data Sources when replacing existing ones.</br>
 Failing to do the following precisely will end up with corrupted formulas that you will need</br>
 to fix manually. Given that some Workbooks have 22 Panes, preventing problems is far easier</br>
 than fixing the "aftermath".</br>
