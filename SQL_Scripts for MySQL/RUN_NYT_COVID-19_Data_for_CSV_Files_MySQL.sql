@@ -2,7 +2,7 @@
 --    Imports from 'US_USA_CSV.csv', 'US_States_CSV.csv', 'US_Counties_CSV.csv', and updates table with New_Cases and New_Deaths
 --    Creates 'US_USA.csv', 'US_States.csv', 'US_Counties.csv' files for use with Tableau Public
 
--- For MySQL - Produces NY Times COVID-19 data tables for use with Tableau Desktop (requires Census files to be done first)
+-- For MySQL - Produces NY Times COVID-19 CSV files for use with Tableau Public (requires Census tables and CSV files to be done first)
 
 
 -- William L. Salomon, MD MS MPH
@@ -417,4 +417,37 @@ SELECT
             ),3) AS New_Deaths_MvgAvg
 FROM covid_19.us_counties;
 
---  NY Times COVID-19 data tables ready to be connected to Tableau Desktop along with Census tables
+
+
+-- EXPORT CSV files
+
+SELECT 'Row_ID', 'Date', 'Tot_Cases', 'New_Cases', 'Tot_Deaths', 'New_Deaths'
+UNION
+SELECT * FROM covid_19.us_usa
+INTO OUTFILE 'C:\\COVID-19\\US_USA.csv'
+FIELDS OPTIONALLY ENCLOSED BY '' TERMINATED BY ',' ESCAPED BY '\\'
+LINES TERMINATED BY '\n';
+
+SELECT 'Row_ID', 'Date', 'State', 'FIPS', 'Tot_Cases', 'New_Cases', 'Tot_Deaths', 'New_Deaths'
+UNION
+SELECT * FROM covid_19.us_states
+INTO OUTFILE 'C:\\COVID-19\\US_States.csv'
+FIELDS OPTIONALLY ENCLOSED BY '' TERMINATED BY ',' ESCAPED BY '\\'
+LINES TERMINATED BY '\n';
+
+SELECT 'Row_ID', 'Date', 'State', 'County', 'FIPS', 'Tot_Cases', 'New_Cases', 'Tot_Deaths', 'New_Deaths'
+UNION
+SELECT * FROM covid_19.us_counties
+INTO OUTFILE 'C:\\COVID-19\\US_Counties.csv'
+FIELDS OPTIONALLY ENCLOSED BY '' TERMINATED BY ',' ESCAPED BY '\\'
+LINES TERMINATED BY '\n';
+
+SELECT 'Row_ID', 'Date', 'State', 'County', 'FIPS', 'Tot_Cases', 'New_Cases', 'New_Cases_MvgAvg',
+	'Tot_Deaths', 'New_Deaths', 'New_Deaths_MvgAvg'
+UNION
+SELECT * FROM covid_19.us_counties_mvg_avg_vw
+INTO OUTFILE 'C:\\COVID-19\\US_Counties_Mvg_Avg.csv'
+FIELDS OPTIONALLY ENCLOSED BY '' TERMINATED BY ',' ESCAPED BY '\\'
+LINES TERMINATED BY '\n';
+
+--  NY Times COVID-19 data CSV files are ready to be loaded to Tableau Public along with Census CSV files
